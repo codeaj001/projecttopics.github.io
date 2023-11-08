@@ -1,0 +1,230 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #fde6a7;
+}
+
+header > nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header > nav > a {
+  text-decoration: none;
+  font-size: 23px;
+  padding-left: 28px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #57430E;
+}
+
+header > nav > div {
+  display: flex;
+  padding: 20px;
+}
+
+header > nav > div > .upload {
+  text-decoration: none;
+  color: #57430E;
+  text-transform: uppercase;
+}
+
+header > nav > div > a {
+  padding: 0px 40px 0px 40px;
+}
+
+header > nav > div > a > img {
+  width: 50px;
+  height: auto;
+}
+
+.upload_sec {
+  display: none;
+}
+
+/* Android Device Responsiveness */
+@media screen and (max-width: 400px) {
+  
+  header > nav > a {
+      font-size: 20px;
+      padding-left: 20px;
+  }
+  
+  header > nav > div {
+      padding: 20px;
+  }
+  
+  header > nav > div > .upload {
+      display: none;
+  }
+  
+  header > nav > div > a {
+      padding: 0px 10px 0px 10px;
+  }
+  
+  header > nav > div > a > img {
+      width: 40px;
+  }
+  .upload_sec {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      text-decoration: none;
+      text-decoration: none;
+      color: #57430E;
+      text-transform: capitalize;
+      font-size: 20px;
+  }
+}
+
+
+
+/* End of header */
+
+
+.search_area {
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 80px;
+}
+
+.search_area > form > input {
+  width: 400px;
+  height: 40px;
+  outline: none;
+  border: 1px solid #57430E;
+  border-radius: 10px;
+  font-size: 18px;
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+.search_area > form > button {
+  width: 100px;
+  height: 40px;
+  outline: none;
+  border: 1px solid #57430E;
+  border-radius: 20px;
+  background-color: #fde6a7;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.search_area > form > button:hover {
+  box-shadow: 3px 3px 20px #57430E;
+  transition: .3s;
+}
+
+.srch_in::placeholder {
+  color: #57430E;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Android Device Responsiveness */
+@media screen and (max-width: 400px) {
+  .search_area {
+      padding-top: 5px;
+  }
+  
+  .search_area > form > input {
+      width: 200px;
+      height: 30px;
+      font-size: 15px;
+  }
+  
+  .search_area > form > button {
+      width: 100px;
+      height: 30px;
+  }
+}
+
+/* Tablet/Wider screen Device Responsiveness */
+@media screen and (max-width: 500px) {
+  .search_area {
+      padding-top: 18px;
+  }
+  
+  .search_area > form > input {
+      width: 220px;
+      height: 30px;
+      font-size: 15px;
+      margin-right: 18px;
+  }
+  
+  .search_area > form > button {
+      width: 100px;
+      height: 30px;
+  }
+}
+
+main {
+  display: flex;
+  width: 1000px;
+  margin: 0 auto;
+/*   height: 200px; */
+  /* background-color: red; */
+  justify-content: center;
+  text-align: center;
+}
+
+main section {
+  margin: 4px;
+}
+
+main .columnOne {
+  width: 320px;
+  /* background-color: green; */
+  /* color: white; */
+}
+main .columnTwo {
+  width: 270px;
+  /* background-color: pink; */
+}
+main .columnThree {
+  width: 370px;
+  /* background-color: blue; */
+}
+
+main section h3 {
+  font-size: 25px;
+}
+
+main section div {
+  font-size: 20px;
+  padding: 5px 0px;
+}
+main section div:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.sess,
+.topics {
+  display: none;
+}
+
+
+/* Styling main*/
+
+.columnThree section div span {
+  width: 12px;
+  height: 12px;
+}
+
+.columnThree section div #accepted {
+  background-color: green;
+  color: #fff;
+}
+
+.columnThree section div #declined {
+  background-color: red;
+  color: #fff;
+}
